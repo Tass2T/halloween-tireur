@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqb7x3w45j408"]
+
+[ext_resource type="Script" uid="uid://cnwloabb5qtl1" path="res://scripts/player.gd" id="1_3vyb7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u8vuu"]
+radius = 22.022715
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_3vyb7")
+
+[node name="Body" type="ColorRect" parent="."]
+offset_right = 266.82352
+offset_bottom = 108.0
+color = Color(0.79607844, 0.4, 0.7058824, 1)
+
+[node name="Hitbox" type="ColorRect" parent="."]
+offset_left = 53.0
+offset_top = 31.0
+offset_right = 94.0
+offset_bottom = 72.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(73, 51)
+shape = SubResource("CircleShape2D_u8vuu")

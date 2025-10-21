@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="halloween-tireur"
+run/main_scene="uid://d3p3jkrs5bvx5"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=3840
+window/size/viewport_height=2160
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
