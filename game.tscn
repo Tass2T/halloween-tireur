@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d3p3jkrs5bvx5"]
+[gd_scene load_steps=5 format=3 uid="uid://d3p3jkrs5bvx5"]
 
 [ext_resource type="PackedScene" uid="uid://dqb7x3w45j408" path="res://scenes/player.tscn" id="1_80nbo"]
 [ext_resource type="Script" uid="uid://diwa324ypvf0p" path="res://scripts/level_one.gd" id="1_e2o6t"]
 [ext_resource type="Texture2D" uid="uid://builmgv7fvpii" path="res://assets/fond.png" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://nbyw74a5f26o" path="res://scenes/enemy.tscn" id="4_fc0e3"]
 
 [node name="Game" type="Node2D"]
 
@@ -11,8 +12,11 @@ script = ExtResource("1_e2o6t")
 
 [node name="Fond" type="Sprite2D" parent="LevelOne"]
 z_index = -3
-position = Vector2(1927, 1085)
+position = Vector2(1920, 1079)
 texture = ExtResource("3_feb5d")
 
 [node name="Player" parent="LevelOne" instance=ExtResource("1_80nbo")]
 position = Vector2(278, 275)
+
+[node name="Enemy" parent="LevelOne" instance=ExtResource("4_fc0e3")]
+position = Vector2(3342, 776)
