@@ -5,8 +5,8 @@ class_name Player extends CharacterBody2D
 func _physics_process(delta: float) -> void:
 	position = get_global_mouse_position()
 	
+	if Input.is_action_pressed("shoot"):
+		bullets_manager.shootBullet(position)
+	
 	move_and_slide()
 	
-func _input(event: InputEvent) -> void:
-	if (event.is_action("shoot")):
-		bullets_manager.shootBullet(position)

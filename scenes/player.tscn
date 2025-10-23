@@ -28,3 +28,6 @@ shape = SubResource("CircleShape2D_u8vuu")
 [node name="BulletsManager" type="Node" parent="."]
 script = ExtResource("2_g2els")
 metadata/_custom_type_script = "uid://cfi2itxtrxns5"
+
+[node name="BulletTimer" type="Timer" parent="BulletsManager"]
+one_shot = true
