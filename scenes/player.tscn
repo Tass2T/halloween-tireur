@@ -31,3 +31,5 @@ metadata/_custom_type_script = "uid://cfi2itxtrxns5"
 
 [node name="BulletTimer" type="Timer" parent="BulletsManager"]
 one_shot = true
+
+[connection signal="timeout" from="BulletsManager/BulletTimer" to="BulletsManager" method="_on_bullet_timer_timeout"]
