@@ -2,7 +2,7 @@ class_name BulletsManager extends Node
 
 var bulletScene: PackedScene
 var canShoot: bool = true
-var bulletDelay: float = 0.3
+var bulletDelay: float = 0.2
 @onready var bullet_timer: Timer = $BulletTimer
 
 func _init() -> void:

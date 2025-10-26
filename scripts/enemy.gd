@@ -9,5 +9,5 @@ func _process(delta: float) -> void:
 	pass
 
 func getShot() -> void:
-	print("shot")
+	queue_free()
 	
